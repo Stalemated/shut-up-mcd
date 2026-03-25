@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "",
-		"sources": ""
+		"sources": "https://github.com/Stalemated/mcd-lore-toggler"
 	},
 	"license": "MIT",
 	"icon": "assets/mcd-lore-toggler/icon.png",
