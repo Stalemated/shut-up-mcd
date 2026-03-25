@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "mcd-lore-toggler",
 	"version": "${version}",
-	"name": "MCD-Lore-Toggler",
+	"name": "MC Dungeons Lore Toggler",
 	"description": "Adds the ability to toggle MCDW's and MCDA's flavor and effect lore.",
 	"authors": [
 		"Stalemated"
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Stalemated/mcd-lore-toggler"
 	},
 	"license": "MIT",
-	"icon": "assets/mcd-lore-toggler/icon.png",
+	"icon": "assets/mcd-lore-toggler/icon.jpg",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
