@@ -19,6 +19,6 @@ public class ShutUpMCD implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ShutUpMCDConfig.load();
-		LOGGER.info("Shut Up MC Dungeons config loaded.");
+		LOGGER.info("Shut Up MCD config loaded.");
 	}
 }

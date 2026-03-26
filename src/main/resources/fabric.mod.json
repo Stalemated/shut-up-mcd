@@ -2,14 +2,14 @@
 	"schemaVersion": 1,
 	"id": "shut-up-mcd",
 	"version": "${version}",
-	"name": "Shut Up MC Dungeons",
+	"name": "Shut Up MCD",
 	"description": "Adds the ability to toggle MCDW's and MCDA's flavor and effect lore.",
 	"authors": [
 		"Stalemated"
 	],
 	"contact": {
 		"homepage": "",
-		"sources": "https://github.com/Stalemated/shut-up-mc-dungeons"
+		"sources": "https://github.com/Stalemated/shut-up-mcd"
 	},
 	"license": "MIT",
 	"icon": "assets/shut-up-mcd/icon.jpg",

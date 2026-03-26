@@ -16,12 +16,12 @@ public class ModMenuIntegration implements ModMenuApi {
 
             ConfigBuilder builder = ConfigBuilder.create()
                     .setParentScreen(parent)
-                    .setTitle(Text.literal("MC Dungeons Lore Toggler Config"));
+                    .setTitle(Text.literal("Shut Up MCD Config"));
 
             builder.setSavingRunnable(ShutUpMCDConfig::save);
 
-            ConfigCategory mcda = builder.getOrCreateCategory(Text.literal("MC Dungeons Armors"));
-            ConfigCategory mcdw = builder.getOrCreateCategory(Text.literal("MC Dungeons Weapons"));
+            ConfigCategory mcda = builder.getOrCreateCategory(Text.literal("MCD Armors"));
+            ConfigCategory mcdw = builder.getOrCreateCategory(Text.literal("MCD Weapons"));
 
             ConfigEntryBuilder entryBuilder = builder.entryBuilder();
 
