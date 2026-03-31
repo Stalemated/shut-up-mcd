@@ -15,7 +15,9 @@ public class ShutUpMCDConfig {
     public static boolean showMCDAEffectLore = true;
     public static boolean showMCDWFlavorLore = true;
     public static boolean showMCDWEffectLore = true;
+    public static boolean showMCDARFlavorLore = true;
 
+    // Config file
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "shut_up_mcd.json");
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
@@ -31,6 +33,9 @@ public class ShutUpMCDConfig {
                     if (FabricLoader.getInstance().isModLoaded("mcdw")) {
                         showMCDWFlavorLore = data.showMCDWFlavorLore;
                         showMCDWEffectLore = data.showMCDWEffectLore;
+                    }
+                    if (FabricLoader.getInstance().isModLoaded("mcdar")) {
+                        showMCDARFlavorLore = data.showMCDARFlavorLore;
                     }
                 }
             } catch (IOException e) {
@@ -51,6 +56,9 @@ public class ShutUpMCDConfig {
             data.showMCDWFlavorLore = showMCDWFlavorLore;
             data.showMCDWEffectLore = showMCDWEffectLore;
         }
+        if (FabricLoader.getInstance().isModLoaded("mcdar")) {
+            data.showMCDARFlavorLore = showMCDARFlavorLore;
+        }
 
         try (FileWriter writer = new FileWriter(CONFIG_FILE)) {
             GSON.toJson(data, writer);
@@ -64,5 +72,6 @@ public class ShutUpMCDConfig {
         boolean showMCDAEffectLore = ShutUpMCDConfig.showMCDAEffectLore;
         boolean showMCDWFlavorLore = ShutUpMCDConfig.showMCDWFlavorLore;
         boolean showMCDWEffectLore = ShutUpMCDConfig.showMCDWEffectLore;
+        boolean showMCDARFlavorLore = ShutUpMCDConfig.showMCDARFlavorLore;
     }
 }

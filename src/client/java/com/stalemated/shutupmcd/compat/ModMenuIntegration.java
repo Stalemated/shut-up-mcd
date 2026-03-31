@@ -24,6 +24,7 @@ public class ModMenuIntegration implements ModMenuApi {
 
             boolean mcdaLoaded = FabricLoader.getInstance().isModLoaded("mcda");
             boolean mcdwLoaded = FabricLoader.getInstance().isModLoaded("mcdw");
+            boolean mcdarLoaded = FabricLoader.getInstance().isModLoaded("mcdar");
 
             if (mcdaLoaded) {
                 ConfigCategory mcda = builder.getOrCreateCategory(Text.literal("MCD Armors"));
@@ -57,8 +58,18 @@ public class ModMenuIntegration implements ModMenuApi {
                         .build());
             }
 
+            if (mcdarLoaded) {
+                ConfigCategory mcdar = builder.getOrCreateCategory(Text.literal("MCD Artifacts"));
+
+                // MCDAR Flavor
+                mcdar.addEntry(entryBuilder.startBooleanToggle(Text.literal("Show Artifact Flavor Lore"), ShutUpMCDConfig.showMCDARFlavorLore)
+                        .setDefaultValue(true)
+                        .setSaveConsumer(newValue -> ShutUpMCDConfig.showMCDARFlavorLore = newValue)
+                        .build());
+            }
+
             // Fallback
-            if (!mcdaLoaded && !mcdwLoaded) {
+            if (!mcdaLoaded && !mcdwLoaded && !mcdarLoaded) {
                 builder.getOrCreateCategory(Text.literal("No supported mods loaded"));
             }
 

@@ -5,7 +5,8 @@
 	"plugin": "com.stalemated.shutupmcd.MixinPlugin",
 	"client": [
 		"ArmorSetItemMixin",
-		"McdwWeaponMixin"
+		"CleanlinessHelperMcdwMixin",
+		"CleanlinessHelperMcdarMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

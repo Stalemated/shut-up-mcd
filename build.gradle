@@ -54,6 +54,7 @@ dependencies {
 	modCompileOnly "com.terraformersmc:modmenu:${project.mod_menu_version}"
 	modCompileOnly "curse.maven:mcdw-407311:${project.mcdw_id}"
 	modCompileOnly "curse.maven:mcda-426206:${project.mcda_id}"
+	modCompileOnly "curse.maven:mcdar-476788:${project.mcdar_id}"
 }
 
 processResources {

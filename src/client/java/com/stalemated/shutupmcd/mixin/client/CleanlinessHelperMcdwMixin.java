@@ -10,7 +10,7 @@ import java.util.List;
 import com.stalemated.shutupmcd.config.ShutUpMCDConfig;
 
 @Mixin(value = {CleanlinessHelper.class})
-public class McdwWeaponMixin {
+public class CleanlinessHelperMcdwMixin {
 
     @Redirect(
             method = "mcdw$tooltipHelper",

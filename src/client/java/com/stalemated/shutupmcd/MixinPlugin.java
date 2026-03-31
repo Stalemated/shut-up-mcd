@@ -22,8 +22,10 @@ public class MixinPlugin implements IMixinConfigPlugin {
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (mixinClassName.endsWith("ArmorSetItemMixin")) {
             return FabricLoader.getInstance().isModLoaded("mcda");
-        } else if (mixinClassName.endsWith("McdwWeaponMixin")) {
+        } else if (mixinClassName.endsWith("CleanlinessHelperMcdwMixin")) {
             return FabricLoader.getInstance().isModLoaded("mcdw");
+        } else if (mixinClassName.endsWith("CleanlinessHelperMcdarMixin")) {
+            return FabricLoader.getInstance().isModLoaded("mcdar");
         }
         return true;
     }
